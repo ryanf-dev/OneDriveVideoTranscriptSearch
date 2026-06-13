@@ -2,6 +2,10 @@
 
 Desktop application that searches Microsoft OneDrive transcript files for exact phrase matches and shows timestamped snippets in a clean, searchable UI.
 
+## Screenshot
+
+![OneDrive Transcript Search screenshot](Screenshot.png)
+
 ## Purpose
 
 This project was built to make meeting transcript review faster and more practical.
@@ -71,6 +75,16 @@ Create a `.env` file in the project root if you want to override defaults:
 CLIENT_ID=<your-app-client-id>
 TENANT_ID=consumers
 ```
+
+To get `CLIENT_ID` from Azure:
+
+1. Sign in to the Azure portal at <https://portal.azure.com>.
+2. Go to **Microsoft Entra ID** -> **App registrations** -> **New registration**.
+3. Enter an app name (for example, `OneDriveTranscriptSearch`) and keep account type as **Accounts in any organizational directory and personal Microsoft accounts**.
+4. Create the app, then open the app's **Overview** page.
+5. Copy the **Application (client) ID** value and paste it into `.env` as `CLIENT_ID`.
+6. In **Authentication**, add platform **Mobile and desktop applications** and enable the default redirect URI for public clients if it is not already enabled.
+7. In **API permissions**, ensure Microsoft Graph delegated permissions include `Files.Read` and `User.Read`, then grant consent if your tenant requires it.
 
 Notes:
 
