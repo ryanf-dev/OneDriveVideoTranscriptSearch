@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+.venv-build/
+.venv311/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+/.env
+.env.local
+.env.production
+.env.staging
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+Transcripts/
+token_cache.json
+/token_cache.json
+**/token_cache.json
+notes.txt
+*.log
+*.tmp
+*.bak
+
+# Packaged app output (generated)
+build-dist-client/
+dist-client/
+build-dist-client-fix/
+build-dist-client-fix2/
+dist-client-fix/
+dist-client-fix2/
+build-*/
+dist-*/
+
+# PyInstaller artifacts
+*.spec
+!OneDriveSearch.spec
+*.toc
+*.pyz
+xref-*.html
+warn-*.txt
